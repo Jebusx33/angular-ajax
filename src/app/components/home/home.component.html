@@ -1,0 +1,19 @@
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="col"*ngFor="let pais of paises, let i = index">
+      <div class="card h-10" >
+        <img src="{{pais.flags.svg}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{i+1}} - {{pais.name.common}}</h5>
+          <p class="card-text">
+           Capital: {{pais.capital}} <br>
+           subregion: {{pais.subregion}} <br>
+           Region: {{pais.region}} 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
