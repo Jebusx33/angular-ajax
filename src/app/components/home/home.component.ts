@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,13 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  paises: any[]=[];
-  constructor(private Http: HttpClient){
-        this.Http.get('https://restcountries.com/v3.1/all ')
-        .subscribe( (resp:any) =>{
-          this.paises=resp
-          console.log(resp)
-        })
 
-  }
 }

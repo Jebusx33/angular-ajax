@@ -1,19 +1,25 @@
+<h3>Peticiones ajax</h3>
 
-
-<div class="row row-cols-1 row-cols-md-3 g-4" >
-    <div class="col"*ngFor="let pais of paises, let i = index">
-      <div class="card h-10" >
-        <img src="{{pais.flags.svg}}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{i+1}} - {{pais.name.common}}</h5>
-          <p class="card-text">
-           Capital: {{pais.capital}} <br>
-           subregion: {{pais.subregion}} <br>
-           Region: {{pais.region}} 
-          </p>
-        </div>
-      </div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card border-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Peticion por httClient</div>
+            <div class="card-body">
+              <h5 class="card-title">https://restcountries.com</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          
+            </div>
+          </div>
     </div>
+    <div class="col">
+                 <div class="card border-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Peticion por HttpClient y service.ts</div>
+            <div class="card-body">
+              <h5 class="card-title">https://reqres.in/</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    </div>
+    
   </div>
-
 
